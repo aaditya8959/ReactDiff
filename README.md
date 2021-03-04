@@ -31,7 +31,9 @@ in ubuntu, one can install BLAS/LAPACK using
 4. **Trilinos** : Installation instructions can be found [here](https://www.dealii.org/current/external-libs/trilinos.html)
 
 ## Running the code
-The code can be run as follows : *cmake . ; make -j8 ; mpirun -np 4 $EXECUTABLE$ $INPUT FILE$*
+The code can be run as follows :
+
+<div align="center"><i>cmake . ; make -j8 ; mpirun -np 4 $EXECUTABLE$ $INPUT FILE$</i></div>
 
 For example, in the **Schnakenberg** folder the executable is **RD_PBC** which is generated after compiling **RD_PBC.cc**. **testinp.prm** is the input file
 which is used by the user to provide the required inputs to the problem. 
