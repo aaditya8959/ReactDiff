@@ -26,7 +26,8 @@ in ubuntu, one can install an OpenMPI distribution using
 If you are working locally on your desktop, the appropriate package manager can be used to install the relevant libraries. For example,
 in ubuntu, one can install BLAS/LAPACK using
 
-<div align="center"><i>sudo apt-get install libblas3</i></div>  
+<div align="center"><i>sudo apt-get install libblas3</i></div> 
+ 
  
 4. **Trilinos** : Installation instructions can be found [here](https://www.dealii.org/current/external-libs/trilinos.html)
 
@@ -35,8 +36,7 @@ The code can be run as follows :
 
 <div align="center"><i>cmake . ; make -j8 ; mpirun -np 4 $EXECUTABLE$ $INPUT FILE$</i></div>  
 
-For example, in the **Schnakenberg** folder the executable is **RD_PBC** which is generated after compiling **RD_PBC.cc**. **testinp.prm** is the input file
-which is used by the user to provide the required inputs to the problem. 
+For example, in the **Schnakenberg** folder  *$EXECUTABLE$* is **RD_PBC** which is generated after compiling **RD_PBC.cc**. *$INPUT FILE$* refers to teh file **testinp.prm** which is modified by the user to provide the required inputs to the problem. 
 
 
 
