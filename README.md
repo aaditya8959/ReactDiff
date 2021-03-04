@@ -17,13 +17,13 @@ deal.II prereqs : [**MPI**](https://www.mpi-forum.org/mpi-40/), [**P4EST**](http
 
 1. **MPI** : On an HPC platform there will most likely be an MPI implementation which can be loaded as a module. On the desktop the appropriate package manager can be used to install the required libraries. For example, an OpenMPI distribution can be installed in ubuntu as follows :
 
-<div align="center"><i>sudo apt-get install libopenmpi-dev openmpi-bin</i></div>  
+<div align="center";style="font-family:Courier New"><i>sudo apt-get install libopenmpi-dev openmpi-bin</i></div>  
 
 2. **P4EST** : Installation instructions can be found [here](https://www.dealii.org/current/external-libs/p4est.html).
 
 3. **BLAS/LAPACK** : On an HPC platform, there will most likely be some BLAS/LAPACK implementation which can be loaded as a module. On the desktop the appropriate package manager can be used to install the relevant libraries. For example, one can install BLAS/LAPACK in ubuntu as follows :
 
-<div align="center"><i>sudo apt-get install libblas3</i></div> 
+<div align="center";style="font-family:Courier New"><i>sudo apt-get install libblas3</i></div> 
  
  
 4. **Trilinos** : Installation instructions can be found [here](https://www.dealii.org/current/external-libs/trilinos.html).
@@ -35,11 +35,11 @@ deal.II prereqs : [**MPI**](https://www.mpi-forum.org/mpi-40/), [**P4EST**](http
 ## Compiling the RD code
 The code can be compiled as :
 
-<div align="center"><i>cmake . ; make -j8 </i></div>  
+<div align="center";style="font-family:Courier New"><i>cmake . ; make -j8 </i></div>  
 
 and run as :
 
-<div align="center"><i>mpirun -np 4 $EXECUTABLE $INPUT FILE </i></div><br>
+<div align="center";style="font-family:Courier New"><i>mpirun -np 4 $EXECUTABLE $INPUT FILE </i></div><br>
 
 For example, in the **Schnakenberg** folder the executable is **RD_PBC** which is generated after compiling **RD_PBC.cc**. The file **testinp.prm** is the input file which is typically modified by the user to provide the required inputs to the problem. 
 
