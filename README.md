@@ -11,7 +11,7 @@ approximation to the system of PDEs and the codes are built on the deal.II open 
 ## Prerequisities 
 FE Package : [**deal.II version 9.2.0**](https://www.dealii.org/)
 
-deal.II prereqs : **MPI**, **P4EST**, **BLAS/LAPACK**, **Trilinos**
+deal.II prereqs : [**MPI**](https://www.mpi-forum.org/mpi-40/), [**P4EST**](https://www.p4est.org/), [**BLAS/LAPACK**](https://www.netlib.org/lapack/lug/node11.html), [**Trilinos**](https://trilinos.github.io/)
 
 ## deal.II Installation instructions
 
@@ -39,7 +39,7 @@ The code can be compiled as :
 
 and run as :
 
-<div align="center"><i>mpirun -np 4 $EXECUTABLE $INPUT FILE </i></div>
+<div align="center"><i>mpirun -np 4 $EXECUTABLE $INPUT FILE </i></div><br>
 
 For example, in the **Schnakenberg** folder the executable is **RD_PBC** which is generated after compiling **RD_PBC.cc**. The file **testinp.prm** is the input file which is typically modified by the user to provide the required inputs to the problem. 
 
