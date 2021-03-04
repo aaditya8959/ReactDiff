@@ -19,7 +19,7 @@ deal.II prereqs : [**MPI**](https://www.mpi-forum.org/mpi-40/), [**P4EST**](http
 
 <div align="center"><i>sudo apt-get install libopenmpi-dev openmpi-bin</i></div>  
 
-2. **P4EST** : Installation instructions can be found [here](https://www.dealii.org/current/external-libs/p4est.html)
+2. **P4EST** : Installation instructions can be found [here](https://www.dealii.org/current/external-libs/p4est.html).
 
 3. **BLAS/LAPACK** : On an HPC platform, there will most likely be some BLAS/LAPACK implementation which can be loaded as a module. On the desktop the appropriate package manager can be used to install the relevant libraries. For example, one can install BLAS/LAPACK in ubuntu as follows :
 
