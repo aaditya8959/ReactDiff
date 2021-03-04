@@ -26,7 +26,7 @@ deal.II prereqs : [**MPI**](https://www.mpi-forum.org/mpi-40/), [**P4EST**](http
 <div align="center"><i>sudo apt-get install libblas3</i></div> 
  
  
-4. **Trilinos** : Installation instructions can be found [here](https://www.dealii.org/current/external-libs/trilinos.html)
+4. **Trilinos** : Installation instructions can be found [here](https://www.dealii.org/current/external-libs/trilinos.html).
 
 5. **deal.II** : Once the prerequisites have installed successfully, **deal.II version 9.2.0** can be cloned an installed following the instructions [here](https://www.dealii.org/current/readme.html).
 
