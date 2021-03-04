@@ -1,4 +1,4 @@
-# Numerical Solution Of Reaction-Diffusion PDEs
+## Numerical Solution Of Reaction-Diffusion PDEs
 
 Reaction-diffusion(RD) systems form a class of PDEs used to model pattern-formation. In their most basic form, they involve an interplay between
 a linear model of diffusion and non-linear model of reaction between multiple species, which can result in a heterogeneous solution(pattern)
