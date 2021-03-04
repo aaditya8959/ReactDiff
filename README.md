@@ -8,8 +8,9 @@ of Alan Turing, and since then, has been applied to a wide range of scenarios.
 This repository is intended to be a collection of C++ codes to model different RD systems, written on top of the deal.II FE library. 
 
 ## Prereuisities 
-FE Package : deal.II version 9.2.0
-deal.II prereqs : MPI(Parallel Processing), P4EST(Domain partitioning), Trilinos(Parallel Linear Algebra Subroutines)
+FE Package : **deal.II version 9.2.0**
+
+deal.II prereqs : **MPI**(Parallel Processing), **P4EST**(Domain partitioning), **Trilinos**(Parallel Linear Algebra Subroutines)
 
 ## deal.II Installation instructions
 
