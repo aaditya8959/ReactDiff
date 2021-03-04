@@ -1,0 +1,30 @@
+# Listing of parameters 
+# --------------------- 
+# Gamma 
+set gamma = 200.0 
+# a value 
+set apar = 0.2 
+# b value 
+set bpar = 1.3 
+# diffusivity value 
+set diffusivity = 80.0 
+# initial perturbation 
+set initial perturbation = 0.01 
+# xlow 
+set xlow = 0.0 
+# xhigh 
+set xhigh = 1.0 
+# ylow 
+set ylow = 0.0 
+# yhigh 
+set yhigh = 0.02 
+# x subdivisions 
+set x subdivisions = 128 
+# y subdivisions 
+set y subdivisions = 1 
+# time step 
+set time step = 0.00075
+# total time 
+set total time = 1.125
+# skip frequency 
+set skip frequency = 750
