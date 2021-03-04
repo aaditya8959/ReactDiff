@@ -11,7 +11,7 @@ approximation to the system of PDEs and the codes are built on the deal.II open 
 ## Prerequisities 
 FE Package : [**deal.II version 9.2.0**](https://www.dealii.org/)
 
-deal.II prereqs : [**MPI**](https://www.mpi-forum.org/mpi-40/), [**P4EST**](https://www.p4est.org/), [**BLAS/LAPACK**](https://www.netlib.org/lapack/lug/node11.html), [**Trilinos**](https://trilinos.github.io/)
+deal.II prerequisites : [**MPI**](https://www.mpi-forum.org/mpi-40/), [**P4EST**](https://www.p4est.org/), [**BLAS/LAPACK**](https://www.netlib.org/lapack/lug/node11.html), [**Trilinos**](https://trilinos.github.io/)
 
 ## deal.II Installation instructions
 
