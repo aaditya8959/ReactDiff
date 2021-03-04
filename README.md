@@ -18,7 +18,7 @@ deal.II prereqs : **MPI**(Parallel Processing), **P4EST**(Domain partitioning), 
 If you are working locally on your desktop, the appropriate package manager can be used to install the relevant libraries. For example, 
 in ubuntu, one can install an OpenMPI distribution using 
 
-*sudo apt-get install libopenmpi-dev openmpi-bin* 
+<div align="center">*sudo apt-get install libopenmpi-dev openmpi-bin*</div>
 
 2. **P4EST** : Installation instructions can be found [here](https://www.dealii.org/current/external-libs/p4est.html)
 
@@ -26,7 +26,7 @@ in ubuntu, one can install an OpenMPI distribution using
 If you are working locally on your desktop, the appropriate package manager can be used to install the relevant libraries. For example,
 in ubuntu, one can install BLAS/LAPACK using
 
-*sudo apt-get install libblas3*
+<div align="center">*sudo apt-get install libblas3*</div>
  
 4. **Trilinos** : Installation instructions can be found [here](https://www.dealii.org/current/external-libs/trilinos.html)
 
