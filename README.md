@@ -37,14 +37,14 @@ sudo apt-get install libblas3
 ## Compiling the RD code
 The code can be compiled as :
 ```
-cmake . ; make -j8
+cmake . ; make 
 ```
 and run as :
 ```
-mpirun -np 4 $EXECUTABLE $INPUTFILE
+mpirun -np $NPROCS $EXECUTABLE $INPUTFILE
 ```
 
-For example, in the **Schnakenberg** folder the executable is **RD_PBC** which is generated after compiling **RD_PBC.cc**. The file **testinp.prm** is the input file which is typically modified by the user to provide the required inputs to the problem. 
+where $NPROCS refers to the number of processors, $EXECUTABLE refers to the problem executable created after compilation, and $INPUTFILE is the input file supplied by the user. For example, in the **Schnakenberg** folder the executable is **RD_PBC** which is generated after compiling **RD_PBC.cc**. The file **testinp.prm** is the input file which is typically modified by the user to provide the required inputs to the problem. 
 
 
 
