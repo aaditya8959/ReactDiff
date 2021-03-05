@@ -326,29 +326,7 @@ namespace RD_Schnakenberg
 					typename parallel::distributed::Triangulation<dim>::cell_iterator>>
 					periodicity_vector;
 	  
-	  /*for (auto &face : triangulation.active_face_iterators())
-		if (face->at_boundary())
-			if (face->center()[0] == min_coord)
-				face->set_boundary_id (1);
-	  
-      for (auto &face : triangulation.active_face_iterators())
-		if (face->at_boundary())
-			if (face->center()[0] == max_coord)
-				face->set_boundary_id (2);
-	  
-      for (auto &face : triangulation.active_face_iterators())
-		if (face->at_boundary())
-			if (face->center()[1] == min_coord)
-				face->set_boundary_id (3);
-				
-			
-
-      for (auto &face : triangulation.active_face_iterators())
-		if (face->at_boundary())
-			if (face->center()[1] == max_coord)
-				face->set_boundary_id (4); */
-							
-	  		
+  		
 		GridTools::collect_periodic_faces(triangulation,
 										  0,
 									      1,
