@@ -262,8 +262,6 @@ namespace RD_Schnakenberg
 					return (a_param + b_param) ;
 				else 	
 					return ((a_param + b_param)*( 1.0 + prtrb*static_cast <double> (rand()) / static_cast <double> (RAND_MAX) ));
-		
-//				return (a_param + b_param)*( 1. + ( prtrb * std::sin(numbers::PI * p[0]) * std::sin(numbers::PI * p[1]) ) ) ;
 			}
 	};
 
@@ -284,9 +282,7 @@ namespace RD_Schnakenberg
 				else 
 					return ((b_param/(a_param+b_param)/(a_param+b_param))*(1.0  + prtrb*static_cast <double> (rand()) / static_cast <double> (RAND_MAX) ));
 	   
-//	  			return b_param/(a_param + b_param)/(a_param + b_param)*( 1. + ( prtrb * std::sin(numbers::PI * p[0]) * std::sin(numbers::PI * p[1]) ) ) ;
-	   
-			}
+		}
 	};
 
 
@@ -314,7 +310,7 @@ namespace RD_Schnakenberg
 		
 	    TimerOutput::Scope t(computing_timer, "setup");
   
-//  	GridGenerator::hyper_cube(triangulation, min_coord, max_coord, true);
+
 		std::vector<unsigned int> subdivs_list ;
 		subdivs_list.push_back(x_subdivs) ;
 		subdivs_list.push_back(y_subdivs) ;
@@ -462,20 +458,17 @@ namespace RD_Schnakenberg
 												fe_values.shape_grad(j, q_point) *
 												fe_values.JxW(q_point)*time_step;
 									   
-							/*cell_matrix(i, j) += fe_values.shape_value(i, q_point) *
-											      fe_values.shape_value(j, q_point) *
-												  fe_values.JxW(q_point)*(1.0 + gamma*time_step);	*/
 							cell_matrix(i, j) += fe_values.shape_value(i, q_point) *
-												fe_values.shape_value(j, q_point) *
-												fe_values.JxW(q_point) ;					   
+											      fe_values.shape_value(j, q_point) *
+												  fe_values.JxW(q_point)*(1.0 + gamma*time_step);	
+												   
 						}
 				
 						cell_rhs(i) += gamma*solution_u_gp[q_point]*solution_u_gp[q_point]*solution_v_gp[q_point]
 										*fe_values.shape_value(i, q_point) * fe_values.JxW(q_point)*time_step;
 						cell_rhs(i) += solution_u_gp[q_point]
 										*fe_values.shape_value(i, q_point) * fe_values.JxW(q_point);
-						cell_rhs(i) += -1.0*solution_u_gp[q_point]
-										*fe_values.shape_value(i, q_point) * fe_values.JxW(q_point)*gamma*time_step;				
+							
 				
 						cell_rhs(i) += gamma*a_param*fe_values.shape_value(i, q_point) * fe_values.JxW(q_point)*time_step;
 					}
