@@ -68,5 +68,5 @@ Alternatively, the installation process can be completed using multiple processo
 make -jN install 
 ```
 
-where 'N'above is a whole number referring to the number of MPI processes.
+where 'N' above is a whole number referring to the number of MPI processes.
 
