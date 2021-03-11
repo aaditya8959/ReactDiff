@@ -84,7 +84,7 @@ cd $HOME
 git clone --single-branch --branch dealii-9.2 https://github.com/dealii/dealii.git
 ```
 
-2. Create build and installation directory
+2. Create a build and installation directory
 ```
 cd $HOME
 mkdir dealii_build
