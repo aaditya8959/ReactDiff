@@ -1,4 +1,4 @@
-## Detailed instructions to install deal.II prerequisities 
+## Installation of deal.II prerequisities 
 
 ### P4EST
 
@@ -69,4 +69,36 @@ make -jN install
 ```
 
 where 'N' above is a whole number referring to the number of MPI processes.
+
+3. Set appropriate environment variable equal to trilinos installation path
+
+```
+export TRILINOS_DIR=$HOME/Trilinos_install
+```
+
+## Installation of deal.II
+
+1. Clone deal.II version 9.2.0 from the github respository
+```
+cd $HOME
+git clone --single-branch --branch dealii-9.2 https://github.com/dealii/dealii.git
+```
+
+2. Create build and installation directory
+```
+cd $HOME
+mkdir dealii_build
+mkdir dealii_install
+```
+
+3. Build, install and test
+```
+cd $HOME/dealii_build
+cmake -DDEAL_II_WITH_MPI=ON -DDEAL_II_WITH_P4EST=ON -DDEAL_II_WITH_LAPACK=ON -DDEAL_II_WITH_TRILINOS=ON -DDEAL_II_WITH_PETSC=OFF -DCMAKE_INSTALL_PREFIX=$HOME/dealii_install $HOME/dealii
+make -jN install
+make -jN test
+```
+
+where 'N' above refers to the number of MPI processes.
+
 
