@@ -94,7 +94,8 @@ mkdir dealii_install
 3. Build, install and test
 ```
 cd $HOME/dealii_build
-cmake -DDEAL_II_WITH_MPI=ON -DDEAL_II_WITH_P4EST=ON -DDEAL_II_WITH_LAPACK=ON -DDEAL_II_WITH_TRILINOS=ON -DDEAL_II_WITH_PETSC=OFF -DCMAKE_INSTALL_PREFIX=$HOME/dealii_install $HOME/dealii
+cmake -DDEAL_II_WITH_MPI=ON -DDEAL_II_WITH_P4EST=ON -DDEAL_II_WITH_LAPACK=ON -DDEAL_II_WITH_TRILINOS=ON \
+      -DDEAL_II_WITH_PETSC=OFF -DCMAKE_INSTALL_PREFIX=$HOME/dealii_install $HOME/dealii
 make -jN install
 make -jN test
 ```
