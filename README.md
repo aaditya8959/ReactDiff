@@ -9,9 +9,9 @@ This repository is intended to be a collection of C++ codes to model different R
 approximation to the system of PDEs and the codes are built on the deal.II open source FE library.
 
 ## Prerequisities 
-FE Package : [**deal.II**](https://www.dealii.org/) **version 9.2**
+FE Package : [**deal.II**](https://www.dealii.org/)(version 9.2)
 
-deal.II prerequisites : [**MPI**](https://www.mpi-forum.org/mpi-40/), [**P4EST**](https://www.p4est.org/), [**BLAS/LAPACK**](https://www.netlib.org/lapack/lug/node11.html), [**Trilinos**](https://trilinos.github.io/)
+deal.II prerequisites : [**MPI**](https://www.mpi-forum.org/mpi-40/), [**P4EST**](https://www.p4est.org/)(version 2.2), [**BLAS/LAPACK**](https://www.netlib.org/lapack/lug/node11.html), [**Trilinos**](https://trilinos.github.io/)(version 13.0.1)
 
 ## deal.II Installation instructions
 
