@@ -97,12 +97,12 @@ cd $HOME/dealii_build
 cmake -DDEAL_II_WITH_MPI=ON -DDEAL_II_WITH_P4EST=ON -DDEAL_II_WITH_LAPACK=ON -DDEAL_II_WITH_TRILINOS=ON \
       -DDEAL_II_WITH_PETSC=OFF -DCMAKE_INSTALL_PREFIX=$HOME/dealii_install $HOME/dealii
 make -jN install
-make -jN test
+make test
 ```
 
 where 'N' above refers to the number of MPI processes.
 
-4. Set appropriate environment variable equal to deal.II installation path
+4. Set the appropriate environment variable equal to deal.II installation path
 ```
 export DEAL_II_DIR=$HOME/dealii_install
 ```
