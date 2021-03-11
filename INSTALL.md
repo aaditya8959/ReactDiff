@@ -102,4 +102,9 @@ make -jN test
 
 where 'N' above refers to the number of MPI processes.
 
+4. Set appropriate environment variable equal to deal.II installation path
+```
+export DEAL_II_DIR=$HOME/dealii_install
+```
+
 
